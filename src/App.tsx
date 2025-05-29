@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "./components/theme-provider";
+import { ModeToggle } from "./components/mode-toggle";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className="flex flex-row items-center justify-center min-h-svh gap-4">
+        <Button>Click me</Button>
+        <ModeToggle />
+      </div>
+    </ThemeProvider>
   );
 }
 
