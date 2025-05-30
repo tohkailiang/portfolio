@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ThemeProvider } from "./components/theme-provider";
-import { ModeToggle } from "./components/mode-toggle";
-import NameCard from "./components/NameCard";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/mode-toggle";
+import NameCard from "@/components/name-card";
 
 function App() {
   return (
